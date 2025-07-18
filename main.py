@@ -4,8 +4,7 @@ import cv2
 from process import solve_maze
 from predict import predict_the_class
 
-def rotate_and_save_image(input_path, direction='right', times=1,
-                          output_dir=os.path.join('Slike', "rotated")):
+def rotate_and_save_image(input_path, direction='right', times=1, output_dir='Slike'):
     """
     Funkcija rotira sliku u zadatom pravcu (lijevo ili desno) za 90 stepeni više puta
     i snima rezultat u izlazni direktorijum sa izmijenjenim imenom.
