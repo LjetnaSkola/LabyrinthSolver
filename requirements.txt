@@ -1,3 +1,4 @@
+onnx
 torch
 torchvision
 opencv-python

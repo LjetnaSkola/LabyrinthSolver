@@ -3,6 +3,8 @@ import torch
 from torchvision import datasets, transforms, models
 from torch import nn, optim
 
+import convert_to_onnx
+
 data_dir = 'train'
 batch_size = 2
 num_classes = 6
@@ -44,3 +46,5 @@ for epoch in range(epochs):
 
 torch.save(model.state_dict(), 'model.pth')
 print("Model saved to model.pth")
+
+convert_to_onnx.conversion() # convert to model.onnx for RPi
